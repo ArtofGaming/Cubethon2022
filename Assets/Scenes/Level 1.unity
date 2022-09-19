@@ -1076,6 +1076,7 @@ GameObject:
   - component: {fileID: 1901466317}
   - component: {fileID: 1901466322}
   - component: {fileID: 1901466323}
+  - component: {fileID: 1901466324}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1190,6 +1191,10 @@ MonoBehaviour:
   rb: {fileID: 1901466317}
   forwardForce: 4000
   sidewaysForce: 50
+  _invoker: {fileID: 0}
+  _isReplaying: 0
+  _isRecording: 0
+  _cubeController: {fileID: 0}
 --- !u!114 &1901466323
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1203,6 +1208,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movement: {fileID: 1901466322}
+--- !u!114 &1901466324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1901466316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b73eefe0868660418ea21202a72ac44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 1901466317}
 --- !u!1001 &990980928630682919
 PrefabInstance:
   m_ObjectHideFlags: 0
