@@ -32,7 +32,7 @@ public class Invoker : MonoBehaviour
     public void Record()
     {
         _recordingTime = 0.0f;
-        playerMovement._isRecording = true;
+        playerMovement._isRecording = false;
     }
 
     public void Replay()

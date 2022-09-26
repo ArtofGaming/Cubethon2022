@@ -5,7 +5,7 @@ public class PlayerCollision : MonoBehaviour
 {
     public PlayerMovement movement;
     public int coinsCollected;
-    void OnCollisionEnter(Collision collision)
+    /*void OnCollisionEnter(Collision collision)
     {
 
         if (collision.collider.tag == "Obstacle")
@@ -21,5 +21,5 @@ public class PlayerCollision : MonoBehaviour
             coinsCollected++;
         }
 
-    }
+    }*/
 }
