@@ -4,7 +4,8 @@ using UnityEngine;
 public class PlayerCollision : MonoBehaviour
 {
     public PlayerMovement movement;
-    void OnCollisionEnter(Collision collision)
+    public int coinsCollected;
+    /*void OnCollisionEnter(Collision collision)
     {
 
         if (collision.collider.tag == "Obstacle")
@@ -14,6 +15,11 @@ public class PlayerCollision : MonoBehaviour
         }
 
         //Debug.Log(collision.collider.name);
+        if (collision.collider.tag == "Coin")
+        {
+            collision.gameObject.SetActive(false);
+            coinsCollected++;
+        }
 
-    }
+    }*/
 }
